@@ -10,6 +10,7 @@ import CoveredImage from "./components/CoveredImage";
 import FavMenu from "./components/FavMenu";
 import Chefs from "./components/Chefs";
 import About from "./components/About";
+import ReservationCard from "./components/ReservationCard";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <CoveredImage bgImg={bg1} />
       <Chefs />
       <About />
+      <ReservationCard />
     </>
   );
 };
