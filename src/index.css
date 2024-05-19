@@ -87,12 +87,12 @@ body {
   width: 240px;
 }
 
-/* longevityComponent style */
+/* longevityComponent style (used also about component) */
 .longevity-bg {
   height: 650px;
   width: 100%;
   background-color: rgb(191, 191, 191);
-  background-image: url(./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg);
+  background-image: url("./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,6 +127,39 @@ body {
   border-right: 49vw solid transparent;
   border-bottom: 326px solid black;
   z-index: -1;
+}
+/* 
+this css also work for both angle up and down with this single class style by a single div
+.angle-up-down {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 49vw solid transparent;
+  border-bottom: 326px solid green;
+  border-top: 326px solid red;
+  z-index: -1;
+} */
+.shapeFourAngle {
+  height: 650px;
+  clip-path: polygon(50.5% 0, 100% 50%, 50% 100%, 0 50%);
+  background: #88a65e;
+  background-image: url("./assets/bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.shapeFourAngle::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #393839;
+  content: "";
+  opacity: 0.2;
 }
 
 /* CoveredImage component */

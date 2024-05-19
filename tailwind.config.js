@@ -14,6 +14,7 @@ export default {
       darkGray: "#050202",
       gray: "#515A63",
       orange: "#F86D58",
+      blue: "#040459",
       title: "#2E2E2E",
       body: "#808080",
       inField: "#CCCCCC",

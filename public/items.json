@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "sushi",
+      "category": "regular",
+      "price": 10,
+      "code": 101,
+      "contain": ["rice", "vegetables", "seafood"],
+      "type": ["chirashizushi", "inarizushi", "nigirizushi"],
+      "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "udon",
+      "category": "noodle",
+      "price": 12,
+      "code": 102,
+      "contain": ["flour", "water", "salt"],
+      "type": ["Niku", "Kitsune", "Kake"],
+      "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tofu",
+      "category": "vegterian",
+      "price": 14,
+      "code": 103,
+      "contain": ["coagulant", "soybeans", "water"],
+      "type": ["Ganmodoki", "Aburaage", "Okara"],
+      "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tempura",
+      "category": "fried",
+      "price": 15,
+      "code": 104,
+      "contain": ["vegetables ", "fish", "vegetables "],
+      "type": ["Mixed ", "Anago ", "Kakiage"],
+      "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Yakitori",
+      "category": "barbecued ",
+      "price": 18,
+      "code": 105,
+      "contain": ["chicken", "sugar", "soy sauce"],
+      "type": ["Mixed", "Anago", "Kakiage"],
+      "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sashimi",
+      "category": "seafood ",
+      "price": 12,
+      "code": 106,
+      "contain": ["seafood"],
+      "type": ["Hotate", "Hamachi", "Sake"],
+      "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "sushi",
+      "category": "regular",
+      "price": 10,
+      "code": 101,
+      "contain": ["rice", "vegetables", "seafood"],
+      "type": ["chirashizushi", "inarizushi", "nigirizushi"],
+      "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "udon",
+      "category": "noodle",
+      "price": 12,
+      "code": 102,
+      "contain": ["flour", "water", "salt"],
+      "type": ["Niku", "Kitsune", "Kake"],
+      "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Tofu",
+      "category": "vegterian",
+      "price": 14,
+      "code": 103,
+      "contain": ["coagulant", "soybeans", "water"],
+      "type": ["Ganmodoki", "Aburaage", "Okara"],
+      "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Tempura",
+      "category": "fried",
+      "price": 15,
+      "code": 104,
+      "contain": ["vegetables ", "fish", "vegetables "],
+      "type": ["Mixed", "Anago", "Kakiage"],
+      "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Yakitori",
+      "category": "barbecued ",
+      "price": 18,
+      "code": 105,
+      "contain": ["chicken", "sugar", "soy sauce"],
+      "type": ["Mixed", "Anago", "Kakiage"],
+      "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Sashimi",
+      "category": "seafood ",
+      "price": 12,
+      "code": 106,
+      "contain": ["seafood"],
+      "type": ["Hotate", "Hamachi", "Sake"],
+      "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg"
+    }
+  ]
+}
