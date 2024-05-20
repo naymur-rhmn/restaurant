@@ -7,6 +7,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   color: white;
+  background-color: black;
 }
 
 @layer base {
@@ -87,6 +88,30 @@ body {
   width: 240px;
 }
 
+@media (min-width: 767px) and (max-width: 850px) {
+  .service-icons {
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-bg-box {
+    width: 100%;
+  }
+  .hero-bg-1:before {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+  }
+
+  .hero-bg-2::before {
+    bottom: 0;
+    right: 0px;
+    width: 90%;
+    height: 200px;
+  }
+}
+
 /* longevityComponent style (used also about component) */
 .longevity-bg {
   height: 650px;
@@ -144,7 +169,7 @@ this css also work for both angle up and down with this single class style by a 
 .shapeFourAngle {
   height: 650px;
   clip-path: polygon(50.5% 0, 100% 50%, 50% 100%, 0 50%);
-  background: #88a65e;
+  background: #495c2f;
   background-image: url("./assets/bg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;

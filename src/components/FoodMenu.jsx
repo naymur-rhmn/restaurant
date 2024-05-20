@@ -28,18 +28,18 @@ const FoodMenu = ({ sliced }) => {
                 alt={`Image of ${name}`}
               />
             </div>
-            <div className="py-2">
+            <div className="py-2 flex flex-col gap-2">
               <div className="flex justify-between items-center">
-                <h4 className="heading-4">{name}</h4>
-                <span className="py-[2px] px-3 rounded-full text-white capitalize heading-6 bg-orange text-wrap">
+                <h4 className="heading-5 md:heading-4">{name}</h4>
+                <span className="py-[2px] px-3 rounded-full text-white capitalize para-sm bg-orange text-wrap">
                   {category}
                 </span>
               </div>
               <div className="flex justify-between items-center">
-                <p className="text-disable">{`${contain[0]} ${
-                  contain[1] && contain[1]
+                <p className="text-disable capitalize">{`${contain?.item1}, ${
+                  contain.item2 && contain.item2
                 }`}</p>
-                <span className="heading-4">${price}</span>
+                <span className="heading-5 md:heading-4">${price}</span>
               </div>
             </div>
           </div>

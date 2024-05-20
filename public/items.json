@@ -6,7 +6,7 @@
       "category": "regular",
       "price": 10,
       "code": 101,
-      "contain": ["rice", "vegetables", "seafood"],
+      "contain": { "item1": "rice", "item2": "vegetables", "item3": "seafood" },
       "type": ["chirashizushi", "inarizushi", "nigirizushi"],
       "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg"
     },
@@ -16,7 +16,7 @@
       "category": "noodle",
       "price": 12,
       "code": 102,
-      "contain": ["flour", "water", "salt"],
+      "contain": { "item1": "flour", "item2": "salt", "item3": "water" },
       "type": ["Niku", "Kitsune", "Kake"],
       "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg"
     },
@@ -26,7 +26,8 @@
       "category": "vegterian",
       "price": 14,
       "code": 103,
-      "contain": ["coagulant", "soybeans", "water"],
+
+      "contain": { "item1": "coagulant", "item2": "soybeans" },
       "type": ["Ganmodoki", "Aburaage", "Okara"],
       "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg"
     },
@@ -36,8 +37,8 @@
       "category": "fried",
       "price": 15,
       "code": 104,
-      "contain": ["vegetables ", "fish", "vegetables "],
       "type": ["Mixed ", "Anago ", "Kakiage"],
+      "contain": { "item1": "vegetables", "item2": "fish" },
       "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg"
     },
     {
@@ -46,7 +47,7 @@
       "category": "barbecued ",
       "price": 18,
       "code": 105,
-      "contain": ["chicken", "sugar", "soy sauce"],
+      "contain": { "item1": "chicken", "item2": "sugar", "item3": "soy sauce" },
       "type": ["Mixed", "Anago", "Kakiage"],
       "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg"
     },
@@ -56,7 +57,7 @@
       "category": "seafood ",
       "price": 12,
       "code": 106,
-      "contain": ["seafood"],
+      "contain": { "item1": "seafood", "item2": "" },
       "type": ["Hotate", "Hamachi", "Sake"],
       "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg"
     },
@@ -66,7 +67,7 @@
       "category": "regular",
       "price": 10,
       "code": 101,
-      "contain": ["rice", "vegetables", "seafood"],
+      "contain": { "item1": "rice", "item2": "vegetables", "item3": "seafood" },
       "type": ["chirashizushi", "inarizushi", "nigirizushi"],
       "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg"
     },
@@ -76,7 +77,7 @@
       "category": "noodle",
       "price": 12,
       "code": 102,
-      "contain": ["flour", "water", "salt"],
+      "contain": { "item1": "flour", "item2": "water", "item3": "salt" },
       "type": ["Niku", "Kitsune", "Kake"],
       "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg"
     },
@@ -86,7 +87,11 @@
       "category": "vegterian",
       "price": 14,
       "code": 103,
-      "contain": ["coagulant", "soybeans", "water"],
+      "contain": {
+        "item1": "coagulant",
+        "item2": "soybeans",
+        "item3": "water"
+      },
       "type": ["Ganmodoki", "Aburaage", "Okara"],
       "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg"
     },
@@ -96,7 +101,7 @@
       "category": "fried",
       "price": 15,
       "code": 104,
-      "contain": ["vegetables ", "fish", "vegetables "],
+      "contain": { "item1": "vegetables", "item2": "fish" },
       "type": ["Mixed", "Anago", "Kakiage"],
       "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg"
     },
@@ -106,7 +111,7 @@
       "category": "barbecued ",
       "price": 18,
       "code": 105,
-      "contain": ["chicken", "sugar", "soy sauce"],
+      "contain": { "item1": "chicken", "item2": "sugar", "item3": "soy sauce" },
       "type": ["Mixed", "Anago", "Kakiage"],
       "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg"
     },
@@ -116,7 +121,7 @@
       "category": "seafood ",
       "price": 12,
       "code": 106,
-      "contain": ["seafood"],
+      "contain": { "item1": "seafood", "item2": "" },
       "type": ["Hotate", "Hamachi", "Sake"],
       "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg"
     }

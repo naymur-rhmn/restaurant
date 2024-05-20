@@ -2,7 +2,7 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <section className="bg-black pb-10 md:pb-40">
+    <section className="bg-black pb-10 md:pb-40 overflow-hidden">
       <div className=" py-8">
         <div className="relative">
           <div className="longevity-bg relative flex flex-col items-center">

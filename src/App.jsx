@@ -11,6 +11,7 @@ import FavMenu from "./components/FavMenu";
 import Chefs from "./components/Chefs";
 import About from "./components/About";
 import ReservationCard from "./components/ReservationCard";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Chefs />
       <About />
       <ReservationCard />
+      <Footer />
     </>
   );
 };

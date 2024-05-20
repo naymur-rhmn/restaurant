@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const ReservationCard = () => {
   return (
-    <section className="bg-black  pb-10 md:pb-40">
+    <section className="bg-black  pb-10 md:pb-40 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="bg-orange p-20 relative reservation-circle overflow-hidden z-10">
           <div className="">

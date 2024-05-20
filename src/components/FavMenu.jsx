@@ -8,7 +8,9 @@ const FavMenu = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         {/* title */}
         <div className="flex justify-between w-full mb-10 items-center">
-          <h2 className="heading-3 text-white capitalize">Favourite menu</h2>
+          <h2 className="heading-4 md:heading-3 text-white capitalize">
+            Favourite menu
+          </h2>
           <div>
             <Button text="See all" px="px-6" />
           </div>
