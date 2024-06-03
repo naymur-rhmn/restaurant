@@ -1,5 +1,4 @@
-import React from "react";
-import Button from "./Button";
+import Button from "../Shared/Button";
 import FoodMenu from "./FoodMenu";
 
 const FavMenu = () => {

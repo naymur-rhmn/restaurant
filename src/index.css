@@ -40,6 +40,21 @@ body {
   }
 }
 
+/* navbar component */
+/* user */
+.user-box:after {
+  position: inherit;
+  content: "";
+  height: 0px;
+  width: 0px;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #b8d20b;
+}
+
 /* hero bg */
 .hero-bg-1:before,
 .hero-bg-2::before {
@@ -220,4 +235,14 @@ this css also work for both angle up and down with this single class style by a 
   background-color: #f97f6c;
   border-radius: 50%;
   z-index: -1;
+}
+
+/* login and registration component */
+.gradient-card {
+  background: rgb(47, 62, 67);
+  background: linear-gradient(
+    0deg,
+    rgba(47, 62, 67, 1) 0%,
+    rgba(26, 31, 40, 1) 100%
+  );
 }

@@ -1,7 +1,7 @@
-import Button from "./Button";
-import service from "../assets/restaurant-service (2).png";
-import cooking from "../assets/cooking-food.png";
-import foodServe from "../assets/food-serve.png";
+import Button from "../Shared/Button";
+import service from "../../assets/restaurant-service.png";
+import cooking from "../../assets/cooking-food.png";
+import foodServe from "../../assets/food-serve.png";
 
 const Hero = () => {
   return (

@@ -1,4 +1,4 @@
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../Shared/SectionTitle";
 
 const About = () => {
   return (
@@ -7,8 +7,6 @@ const About = () => {
         <div className="relative">
           <div className="longevity-bg relative flex flex-col items-center">
             <div className="angle-down"></div>
-            {/* <div className="angle-up"></div> */}
-            {/* <div className="angle-up-down"></div> */}
             <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex flex-col justify-between h-full items-center">
               <SectionTitle
                 titlePart1="Original japanese"

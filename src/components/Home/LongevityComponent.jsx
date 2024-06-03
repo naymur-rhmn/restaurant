@@ -1,4 +1,4 @@
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../Shared/SectionTitle";
 
 const LongevityComponent = () => {
   return (

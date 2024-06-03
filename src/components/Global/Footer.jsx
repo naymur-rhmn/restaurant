@@ -1,5 +1,5 @@
-import logo from "../assets/Group.png";
-import Button from "./Button";
+import logo from "../../assets/Group.png";
+import Button from "../Shared/Button";
 
 const Footer = () => {
   return (
