@@ -22,7 +22,7 @@ const Navbar = () => {
 
   console.log(user);
   return (
-    <div className="bg-darkGray backdrop-blur-lg bg-opacity-60 text-white sticky top-0  z-50">
+    <div className="bg-darkGray backdrop-blur-lg bg-opacity-60 text-white sticky -top-[1px]  z-50">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex items-center justify-between md:justify-normal md:gap-12 h-[65px]">
         <div className=" z-20">
           <img className="min-w-[136px] z-20" src={logo} alt="Logo" />
