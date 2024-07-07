@@ -246,3 +246,21 @@ this css also work for both angle up and down with this single class style by a 
     rgba(26, 31, 40, 1) 100%
   );
 }
+
+/* Menu page Menus element style */
+.menu-category {
+  position: relative;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.009);
+  color: white;
+  /* font-weight: bold; */
+}
+.menu-category:after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  width: 75%;
+  background-color: #b8d20b;
+  content: "";
+}

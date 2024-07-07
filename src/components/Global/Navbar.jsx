@@ -95,9 +95,13 @@ const Navbar = () => {
                 </div>
               </div>
             )}
-            <Button text="reservation" />
+            <Link to={"/reservation"}>
+              <Button text="reservation" />
+            </Link>
           </div>
         </div>
+
+        {/* Responsive menu open close */}
         <div className="block md:hidden z-20">
           {!toggle ? (
             <img

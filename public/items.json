@@ -3,88 +3,95 @@
     {
       "id": 1,
       "name": "sushi",
-      "category": "regular",
+      "group": "regular",
       "price": 10,
       "code": 101,
       "contain": { "item1": "rice", "item2": "vegetables", "item3": "seafood" },
-      "type": ["chirashizushi", "inarizushi", "nigirizushi"],
-      "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg"
+      "variant": ["chirashizushi", "inarizushi", "nigirizushi"],
+      "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg",
+      "type": "primary"
     },
     {
       "id": 2,
       "name": "udon",
-      "category": "noodle",
+      "group": "noodle",
       "price": 12,
       "code": 102,
       "contain": { "item1": "flour", "item2": "salt", "item3": "water" },
-      "type": ["Niku", "Kitsune", "Kake"],
-      "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg"
+      "variant": ["Niku", "Kitsune", "Kake"],
+      "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg",
+      "type": "primary"
     },
     {
       "id": 3,
       "name": "Tofu",
-      "category": "vegterian",
+      "group": "vegetarian",
       "price": 14,
       "code": 103,
-
       "contain": { "item1": "coagulant", "item2": "soybeans" },
-      "type": ["Ganmodoki", "Aburaage", "Okara"],
-      "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg"
+      "variant": ["Ganmodoki", "Aburaage", "Okara"],
+      "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg",
+      "type": "primary"
     },
     {
       "id": 4,
       "name": "Tempura",
-      "category": "fried",
+      "group": "fried",
       "price": 15,
       "code": 104,
-      "type": ["Mixed ", "Anago ", "Kakiage"],
       "contain": { "item1": "vegetables", "item2": "fish" },
-      "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg"
+      "variant": ["Mixed ", "Anago ", "Kakiage"],
+      "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg",
+      "type": "primary"
     },
     {
       "id": 5,
       "name": "Yakitori",
-      "category": "barbecued ",
+      "group": "barbecued",
       "price": 18,
       "code": 105,
       "contain": { "item1": "chicken", "item2": "sugar", "item3": "soy sauce" },
-      "type": ["Mixed", "Anago", "Kakiage"],
-      "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg"
+      "variant": ["Mixed", "Anago", "Kakiage"],
+      "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg",
+      "type": "primary"
     },
     {
       "id": 6,
       "name": "Sashimi",
-      "category": "seafood ",
+      "group": "seafood",
       "price": 12,
       "code": 106,
       "contain": { "item1": "seafood", "item2": "" },
-      "type": ["Hotate", "Hamachi", "Sake"],
-      "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg"
+      "variant": ["Hotate", "Hamachi", "Sake"],
+      "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg",
+      "type": "primary"
     },
     {
       "id": 7,
       "name": "sushi",
-      "category": "regular",
+      "group": "regular",
       "price": 10,
       "code": 101,
       "contain": { "item1": "rice", "item2": "vegetables", "item3": "seafood" },
-      "type": ["chirashizushi", "inarizushi", "nigirizushi"],
-      "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg"
+      "variant": ["chirashizushi", "inarizushi", "nigirizushi"],
+      "img": "https://i.ibb.co/17vtnPF/menu-item-1.jpg",
+      "type": "primary"
     },
     {
       "id": 8,
       "name": "udon",
-      "category": "noodle",
+      "group": "noodle",
       "price": 12,
       "code": 102,
       "contain": { "item1": "flour", "item2": "water", "item3": "salt" },
-      "type": ["Niku", "Kitsune", "Kake"],
-      "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg"
+      "variant": ["Niku", "Kitsune", "Kake"],
+      "img": "https://i.ibb.co/mT6zjGJ/menu-item-2.jpg",
+      "type": "primary"
     },
     {
       "id": 9,
       "name": "Tofu",
-      "category": "vegterian",
+      "group": "vegetarian",
       "price": 14,
       "code": 103,
       "contain": {
@@ -92,38 +99,241 @@
         "item2": "soybeans",
         "item3": "water"
       },
-      "type": ["Ganmodoki", "Aburaage", "Okara"],
-      "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg"
+      "variant": ["Ganmodoki", "Aburaage", "Okara"],
+      "img": "https://i.ibb.co/m6MzVXr/menu-item-3.jpg",
+      "type": "primary"
     },
     {
       "id": 10,
       "name": "Tempura",
-      "category": "fried",
+      "group": "fried",
       "price": 15,
       "code": 104,
       "contain": { "item1": "vegetables", "item2": "fish" },
-      "type": ["Mixed", "Anago", "Kakiage"],
-      "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg"
+      "variant": ["Mixed", "Anago", "Kakiage"],
+      "img": "https://i.ibb.co/1GVL0hr/menu-item-4.jpg",
+      "type": "primary"
     },
     {
       "id": 11,
       "name": "Yakitori",
-      "category": "barbecued ",
+      "group": "barbecued",
       "price": 18,
       "code": 105,
       "contain": { "item1": "chicken", "item2": "sugar", "item3": "soy sauce" },
-      "type": ["Mixed", "Anago", "Kakiage"],
-      "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg"
+      "variant": ["Mixed", "Anago", "Kakiage"],
+      "img": "https://i.ibb.co/VJJy2Cn/menu-item-5.jpg",
+      "type": "primary"
     },
     {
       "id": 12,
       "name": "Sashimi",
-      "category": "seafood ",
+      "group": "seafood",
       "price": 12,
       "code": 106,
       "contain": { "item1": "seafood", "item2": "" },
-      "type": ["Hotate", "Hamachi", "Sake"],
-      "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg"
+      "variant": ["Hotate", "Hamachi", "Sake"],
+      "img": "https://i.ibb.co/gzJSwJ6/menu-item-6.jpg",
+      "type": "primary"
+    },
+    {
+      "id": 13,
+      "name": "Ice Cream",
+      "group": "dessert",
+      "price": 5,
+      "code": 201,
+      "contain": { "item1": "milk", "item2": "sugar", "item3": "cream" },
+      "variant": ["Vanilla", "Chocolate", "Strawberry"],
+      "img": "https://i.ibb.co/xyz123/menu-item-1.jpg",
+      "type": "dessert"
+    },
+    {
+      "id": 14,
+      "name": "Cake",
+      "group": "dessert",
+      "price": 8,
+      "code": 202,
+      "contain": { "item1": "flour", "item2": "sugar", "item3": "eggs" },
+      "variant": ["Chocolate", "Vanilla", "Red Velvet"],
+      "img": "https://i.ibb.co/xyz123/menu-item-2.jpg",
+      "type": "dessert"
+    },
+    {
+      "id": 15,
+      "name": "Brownie",
+      "group": "dessert",
+      "price": 7,
+      "code": 203,
+      "contain": { "item1": "chocolate", "item2": "flour", "item3": "butter" },
+      "variant": ["Fudge", "Walnut", "Blondie"],
+      "img": "https://i.ibb.co/xyz123/menu-item-3.jpg",
+      "type": "dessert"
+    },
+    {
+      "id": 16,
+      "name": "Cupcake",
+      "group": "dessert",
+      "price": 4,
+      "code": 204,
+      "contain": { "item1": "flour", "item2": "sugar", "item3": "eggs" },
+      "variant": ["Red Velvet", "Vanilla", "Chocolate"],
+      "img": "https://i.ibb.co/xyz123/menu-item-4.jpg",
+      "type": "dessert"
+    },
+    {
+      "id": 17,
+      "name": "Pudding",
+      "group": "dessert",
+      "price": 6,
+      "code": 205,
+      "contain": { "item1": "milk", "item2": "sugar", "item3": "eggs" },
+      "variant": ["Rice", "Chocolate", "Vanilla"],
+      "img": "https://i.ibb.co/xyz123/menu-item-5.jpg",
+      "type": "dessert"
+    },
+    {
+      "id": 18,
+      "name": "Cheesecake",
+      "group": "dessert",
+      "price": 9,
+      "code": 206,
+      "contain": { "item1": "cream cheese", "item2": "sugar", "item3": "eggs" },
+      "variant": ["New York", "Blueberry", "Chocolate"],
+      "img": "https://i.ibb.co/xyz123/menu-item-6.jpg",
+      "type": "dessert"
+    },
+    {
+      "id": 19,
+      "name": "French Fries",
+      "group": "dish",
+      "price": 4,
+      "code": 301,
+      "contain": { "item1": "potatoes", "item2": "oil", "item3": "salt" },
+      "img": "https://i.ibb.co/6B9RZZn/french-fries.jpg",
+      "type": "dish"
+    },
+    {
+      "id": 20,
+      "name": "Garlic Bread",
+      "group": "dish",
+      "price": 5,
+      "code": 302,
+      "contain": { "item1": "bread", "item2": "garlic", "item3": "butter" },
+      "img": "https://i.ibb.co/mb9z8YR/garlic-bread.jpg",
+      "type": "dish"
+    },
+    {
+      "id": 21,
+      "name": "Caesar Salad",
+      "group": "dish",
+      "price": 6,
+      "code": 303,
+      "contain": {
+        "item1": "lettuce",
+        "item2": "croutons",
+        "item3": "Parmesan cheese"
+      },
+      "img": "https://i.ibb.co/1bNtM6S/caesar-salad.jpg",
+      "type": "dish"
+    },
+    {
+      "id": 22,
+      "name": "Mashed Potatoes",
+      "group": "dish",
+      "price": 5,
+      "code": 304,
+      "contain": { "item1": "potatoes", "item2": "butter", "item3": "cream" },
+      "img": "https://i.ibb.co/5LXgLLN/mashed-potatoes.jpg",
+      "type": "dish"
+    },
+    {
+      "id": 23,
+      "name": "Steamed Vegetables",
+      "group": "dish",
+      "price": 6,
+      "code": 305,
+      "contain": { "item1": "assorted vegetables", "item2": "seasoning" },
+      "img": "https://i.ibb.co/hV6y30M/steamed-vegetables.jpg",
+      "type": "dish"
+    },
+    {
+      "id": 24,
+      "name": "Onion Rings",
+      "group": "dish",
+      "price": 5,
+      "code": 306,
+      "contain": { "item1": "onions", "item2": "flour", "item3": "seasoning" },
+      "img": "https://i.ibb.co/C7KJzDZ/onion-rings.jpg",
+      "type": "dish"
+    },
+    {
+      "id": 25,
+      "name": "Cola",
+      "group": "beverage",
+      "price": 3,
+      "code": 401,
+      "contain": {
+        "item1": "carbonated water",
+        "item2": "sugar",
+        "item3": "flavorings"
+      },
+      "img": "https://i.ibb.co/jL8R6Bn/cola.jpg",
+      "type": "beverage"
+    },
+    {
+      "id": 26,
+      "name": "Iced Tea",
+      "group": "beverage",
+      "price": 4,
+      "code": 402,
+      "contain": { "item1": "tea", "item2": "ice", "item3": "sweetener" },
+      "img": "https://i.ibb.co/JvS3z8j/iced-tea.jpg",
+      "type": "beverage"
+    },
+    {
+      "id": 27,
+      "name": "Orange Juice",
+      "group": "beverage",
+      "price": 5,
+      "code": 403,
+      "contain": { "item1": "oranges" },
+      "img": "https://i.ibb.co/S0cHbVR/orange-juice.jpg",
+      "type": "beverage"
+    },
+    {
+      "id": 28,
+      "name": "Mineral Water",
+      "group": "beverage",
+      "price": 3,
+      "code": 404,
+      "contain": { "item1": "water", "item2": "minerals" },
+      "img": "https://i.ibb.co/W6s1KyF/mineral-water.jpg",
+      "type": "beverage"
+    },
+    {
+      "id": 29,
+      "name": "Mojito",
+      "group": "beverage",
+      "price": 7,
+      "code": 405,
+      "contain": {
+        "item1": "lime",
+        "item2": "mint",
+        "item3": "sugar",
+        "item4": "rum"
+      },
+      "img": "https://i.ibb.co/SsNbBk0/mojito.jpg",
+      "type": "beverage"
+    },
+    {
+      "id": 30,
+      "name": "Cappuccino",
+      "group": "beverage",
+      "price": 6,
+      "code": 406,
+      "contain": { "item1": "espresso", "item2": "milk", "item3": "foam" },
+      "img": "https://i.ibb.co/q5Hr6cD/cappuccino.jpg",
+      "type": "beverage"
     }
   ]
 }

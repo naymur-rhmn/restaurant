@@ -2,6 +2,7 @@ import Button from "../Shared/Button";
 import service from "../../assets/restaurant-service.png";
 import cooking from "../../assets/cooking-food.png";
 import foodServe from "../../assets/food-serve.png";
+import ButtonLg from "../Shared/ButtonLg";
 
 const Hero = () => {
   return (
@@ -9,12 +10,16 @@ const Hero = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex items-center  h-[calc(100vh-135px)]">
         <div className="lg:w-2/5 w-1/2 z-10">
           <h5 className="heading-5 uppercase text-green">Welcome To</h5>
-          <h1 className="heading-3 md:heading-2 my-4 md:my-6">
-            Kamakura restaurant
+          <h1 className="heading-3 md:heading-2 mt-4 mb-2 md:mt-6 md:mb-4">
+            Izakaya Restaurant
           </h1>
-          <p>Special Japanese Cuisine</p>
-          <div className="mt-10">
-            <Button text="Make Reservation" />
+          <p>
+            Experience the finest in traditional Japanese cuisine, from
+            exquisite sushi and sashimi to savory ramen and delicate tempura.
+          </p>
+          <div className="mt-6 md:mt-10">
+            {/* <Button text="Make Reservation" /> */}
+            <ButtonLg text={"Make Reservation"} px={"px-4 md:px-6"} />
           </div>
         </div>
         <div className="lg:w-3/5 w-1/2 h-fit items-center flex z-0">

@@ -4,6 +4,7 @@ import MotherLayout from "../layout/MotherLayout";
 import Menu from "../pages/Menu";
 import Login from "../components/Auth/Login";
 import Register from "../components/Auth/Register";
+import Reservation from "../pages/Reservation";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "menu",
         element: <Menu />,
+      },
+      {
+        path: "reservation",
+        element: <Reservation />,
       },
       {
         path: "/login",
