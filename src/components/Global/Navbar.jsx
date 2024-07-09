@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import Button from "../Shared/Button";
-import logo from "../../assets/Group.png";
+import logo from "../../assets/izakaya-logo.png";
 import bar from "../../assets/menu-icon.png";
 import close from "../../assets/arrowClose.png";
 import UserButton from "../Shared/UserButton";
@@ -20,22 +20,88 @@ const Navbar = () => {
     handleUserIcon();
   };
 
-  console.log(user);
   return (
     <div className="bg-darkGray backdrop-blur-lg bg-opacity-60 text-white sticky -top-[1px]  z-50">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex items-center justify-between md:justify-normal md:gap-12 h-[65px]">
-        <div className=" z-20">
-          <img className="min-w-[136px] z-20" src={logo} alt="Logo" />
+      <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex items-center justify-between md:justify-between md:gap-12 h-[65px]">
+        <div className="h-10 z-20">
+          <Link to={"/"}>
+            <img
+              className="min-w-[136px] h-full z-20"
+              src={logo}
+              alt="IZAKAYA FOOD & BEVERAGE"
+            />
+          </Link>
+        </div>
+        {/*  */}
+        <nav className="hidden md:flex">
+          <ul className="flex gap-4 md:gap-7">
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive
+                  ? "active-nav underline-animation text-lg"
+                  : "underline-animation  text-lg"
+              }
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to={"/menu"}
+              className={({ isActive }) =>
+                isActive
+                  ? "active-nav underline-animation text-lg"
+                  : "underline-animation  text-lg"
+              }
+            >
+              Menu
+            </NavLink>
+            <NavLink
+              to={"/chefs"}
+              className={({ isActive }) =>
+                isActive
+                  ? "active-nav underline-animation text-lg"
+                  : "underline-animation  text-lg"
+              }
+            >
+              Chefs
+            </NavLink>
+            <NavLink
+              to={"/chef"}
+              className={({ isActive }) =>
+                isActive
+                  ? "active-nav underline-animation text-lg"
+                  : "underline-animation  text-lg"
+              }
+            >
+              Gallery
+            </NavLink>
+
+            <NavLink
+              to={"/about"}
+              className={({ isActive }) =>
+                isActive
+                  ? "active-nav underline-animation text-lg"
+                  : "underline-animation  text-lg"
+              }
+            >
+              About
+            </NavLink>
+          </ul>
+        </nav>
+        <div className="hidden md:flex">
+          <Link to={"/reservation"}>
+            <Button text="reservation" />
+          </Link>
         </div>
         {/* nav */}
-        <div className="hidden md:flex justify-between items-center w-full">
+        {/* <div className="hidden md:flex justify-between items-center w-full">
           <nav>
             <ul className="flex gap-4 md:gap-7">
               <Link to={"/"}>Home</Link>
               <Link to={"/menu"}>Menu</Link>
+              <Link to={"/chefs"}>Chefs</Link>
               <li>Galery</li>
-              <li>About</li>
-              <li>Contact</li>
+              <Link to={"/about"}>About</Link>
             </ul>
           </nav>
           <div className="flex items-center gap-2">
@@ -99,7 +165,7 @@ const Navbar = () => {
               <Button text="reservation" />
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {/* Responsive menu open close */}
         <div className="block md:hidden z-20">

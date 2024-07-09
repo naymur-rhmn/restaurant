@@ -2,7 +2,7 @@ import ButtonLg from "../Shared/ButtonLg";
 
 const ReservationCard = () => {
   return (
-    <section className="bg-black  pb-10 md:pb-24 overflow-hidden">
+    <section className="bg-black  pb-8 md:pb-16 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="bg-orange p-10 md:p-12 relative reservation-circle overflow-hidden z-10 leading-relaxed">
           <div className="">

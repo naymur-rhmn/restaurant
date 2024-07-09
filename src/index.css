@@ -41,6 +41,45 @@ body {
 }
 
 /* navbar component */
+/* nav */
+.active-nav {
+  position: relative;
+  color: #ffffff !important;
+}
+.active-nav::before {
+  position: absolute;
+  bottom: -1px;
+  left: -10%;
+  height: 3px;
+  width: 120%;
+  background-color: #b8d20b;
+  content: "";
+}
+
+.underline-animation:hover {
+  position: relative;
+  /* padding: 3px 0; */
+  color: #b8d20b;
+}
+
+/* .underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  background-color: #a8b64c;
+  transform-origin: bottom right;
+  transition: transform 0.1s ease-out;
+}
+
+.underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
 /* user */
 .user-box:after {
   position: inherit;
@@ -131,8 +170,8 @@ body {
 .longevity-bg {
   height: 650px;
   width: 100%;
-  background-color: rgb(191, 191, 191);
-  background-image: url("./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg");
+  background-color: #95b913f0;
+  /* background-image: url("./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,7 +247,7 @@ this css also work for both angle up and down with this single class style by a 
   height: 400px;
   width: 100%;
   background-color: lightgray;
-  background-image: url(./assets/bg-1.jpg);
+  /* background-image: url(./assets/bg-1.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
