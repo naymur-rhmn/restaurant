@@ -111,7 +111,8 @@ body {
   left: 0;
   width: 100%;
   height: 80%;
-  background-image: url("https://cdn.georgeinstitute.org/sites/default/files/styles/width1920_fallback/public/2020-10/world-food-day-2020.png");
+  background-image: url(./assets/res-bg/hero--food-1.jpg);
+  /* background-image: url("https://cdn.georgeinstitute.org/sites/default/files/styles/width1920_fallback/public/2020-10/world-food-day-2020.png"); */
 }
 
 .hero-bg-2::before {
@@ -119,7 +120,8 @@ body {
   right: -40px;
   width: 240px;
   height: 240px;
-  background-image: url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url(./assets/res-bg/hero-food-2.jpg);
+  /* background-image: url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
 }
 .hero-bg-1:after,
 .hero-bg-2:after {
@@ -171,7 +173,6 @@ body {
   height: 650px;
   width: 100%;
   background-color: #95b913f0;
-  /* background-image: url("./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -224,7 +225,6 @@ this css also work for both angle up and down with this single class style by a 
   height: 650px;
   clip-path: polygon(50.5% 0, 100% 50%, 50% 100%, 0 50%);
   background: #495c2f;
-  background-image: url("./assets/bg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,6 +239,32 @@ this css also work for both angle up and down with this single class style by a 
   background-color: #393839;
   content: "";
   opacity: 0.2;
+}
+
+@media (max-width: 767px) {
+  .longevity-bg {
+    height: 450px;
+  }
+  .angle-down {
+    border-left: 50vw solid transparent;
+    border-right: 49vw solid transparent;
+    border-top: 326px solid black;
+  }
+  .angle-up {
+    border-left: 50vw solid transparent;
+    border-right: 49vw solid transparent;
+    border-bottom: 326px solid black;
+  }
+  .shapeFourAngle {
+    margin-top: -100px;
+    height: 450px;
+    clip-path: polygon(50.5% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+}
+@media (max-width: 570px) {
+  .cover-image {
+    height: 200px;
+  }
 }
 
 /* CoveredImage component */
@@ -261,6 +287,17 @@ this css also work for both angle up and down with this single class style by a 
   background-color: black;
   content: "";
   opacity: 0.1;
+}
+
+@media (max-width: 767px) {
+  .cover-image {
+    height: 300px;
+  }
+}
+@media (max-width: 570px) {
+  .cover-image {
+    height: 200px;
+  }
 }
 
 /* reservationCard component style */
@@ -302,4 +339,16 @@ this css also work for both angle up and down with this single class style by a 
   width: 75%;
   background-color: #b8d20b;
   content: "";
+}
+
+/* Gallery */
+.galleryCategory:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #151515;
+  opacity: 0.3;
 }

@@ -1,8 +1,8 @@
-import Button from "../Shared/Button";
-import service from "../../assets/restaurant-service.png";
-import cooking from "../../assets/cooking-food.png";
-import foodServe from "../../assets/food-serve.png";
+import service from "../../assets/service/restaurant-service.png";
+import cooking from "../../assets/service/cooking-food.png";
+import foodServe from "../../assets/service/food-serve.png";
 import ButtonLg from "../Shared/ButtonLg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,7 +19,9 @@ const Hero = () => {
           </p>
           <div className="mt-6 md:mt-10">
             {/* <Button text="Make Reservation" /> */}
-            <ButtonLg text={"Make Reservation"} px={"px-4 md:px-6"} />
+            <Link to={"reservation"}>
+              <ButtonLg text={"Make Reservation"} px={"px-4 md:px-6"} />
+            </Link>
           </div>
         </div>
         <div className="lg:w-3/5 w-1/2 h-fit items-center flex z-0">

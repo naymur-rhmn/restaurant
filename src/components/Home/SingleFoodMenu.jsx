@@ -2,9 +2,9 @@ const SingleFoodMenu = ({ menu }) => {
   const { name, img, group, price, contain } = menu;
   return (
     <div className="group bg-gray bg-opacity-35 p-2 shadow-lg overflow-hidden">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden w-full max-h-[285px] h-52 sm:h-auto">
         <img
-          className="group-hover:scale-110 duration-300 transition"
+          className="group-hover:scale-110 duration-300 transition h-full w-full"
           src={img}
           alt={`Image of ${name}`}
         />

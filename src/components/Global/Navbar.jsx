@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import Button from "../Shared/Button";
-import logo from "../../assets/izakaya-logo.png";
-import bar from "../../assets/menu-icon.png";
-import close from "../../assets/arrowClose.png";
+import logo from "../../assets/logo/izakaya-logo.png";
+import bar from "../../assets/icons/menu-icon.png";
+import close from "../../assets/icons/arrowClose.png";
 import UserButton from "../Shared/UserButton";
 import useAuth from "../../hooks/useAuth";
 
@@ -22,11 +22,11 @@ const Navbar = () => {
 
   return (
     <div className="bg-darkGray backdrop-blur-lg bg-opacity-60 text-white sticky -top-[1px]  z-50">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex items-center justify-between md:justify-between md:gap-12 h-[65px]">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex items-center justify-between md:justify-between h-[65px]">
         <div className="h-10 z-20">
           <Link to={"/"}>
             <img
-              className="min-w-[136px] h-full z-20"
+              className="min-w-[116px] max-w-[136px] h-full z-20"
               src={logo}
               alt="IZAKAYA FOOD & BEVERAGE"
             />
@@ -66,7 +66,7 @@ const Navbar = () => {
               Chefs
             </NavLink>
             <NavLink
-              to={"/chef"}
+              to={"/gallery"}
               className={({ isActive }) =>
                 isActive
                   ? "active-nav underline-animation text-lg"
@@ -189,7 +189,7 @@ const Navbar = () => {
           }`}
         >
           <nav className="flex flex-col items-center gap-6">
-            <ul className="flex flex-col gap-4">
+            <ul className="flex font-bold text-lg flex-col gap-4">
               <Link to={"/"} onClick={handleNavMenu}>
                 Home
               </Link>
@@ -197,11 +197,17 @@ const Navbar = () => {
                 Menu
               </Link>
               <li>Galery</li>
-              <li>About</li>
-              <li>Contact</li>
+              <Link to={"/chefs"} onClick={handleNavMenu}>
+                <li>Chefs</li>
+              </Link>
+              <Link to={"/about"} onClick={handleNavMenu}>
+                <li>About</li>
+              </Link>
             </ul>
             <div>
-              <Button text="reservation" />
+              <Link to={"/reservation"} onClick={handleNavMenu}>
+                <Button text="reservation" />
+              </Link>
             </div>
           </nav>
         </div>

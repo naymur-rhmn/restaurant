@@ -3,19 +3,17 @@ import { useEffect, useState } from "react";
 const ChefList = ({ sliced }) => {
   const [chefs, setChefs] = useState([]);
   useEffect(() => {
-    fetch("./chefs.json")
+    fetch("http://localhost:3000/chefs")
       .then((res) => res.json())
-      .then((data) =>
-        sliced ? setChefs(data.chefs.slice(0, 4)) : setChefs(data.chefs)
-      );
+      .then((data) => (sliced ? setChefs(data.slice(0, 4)) : setChefs(data)));
   }, [sliced]);
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 shadow-lg">
       {chefs.map((chef) => {
-        const { id, name, img, role } = chef;
+        const { _id, name, img, role } = chef;
         return (
           <div
-            key={id}
+            key={_id}
             className="bg-gradient-to-r from-gray flex justify-between items-center bg-opacity-30 relative shadow-xl"
           >
             <div

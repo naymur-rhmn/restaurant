@@ -21,10 +21,10 @@ const LongevityComponent = () => {
       {/* content */}
       <TwoColumnTxtContent
         para1={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "Experience the true flavors of Japan with our authentic cuisine, meticulously crafted using traditional recipes. Each dish reflects our dedication to culinary excellence, offering a taste of Japan's rich heritage."
         }
         para2={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "For over two decades, we've been committed to providing exceptional Japanese cuisine. Our years of experience ensure that every meal is a celebration of taste, tradition, and impeccable service. Join us and savor the difference."
         }
       />
     </section>

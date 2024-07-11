@@ -1,5 +1,5 @@
 import SignInButton from "../Shared/SignInButton";
-import google from "../../assets/google.png";
+import google from "../../assets/icons/google.png";
 import useAuth from "../../hooks/useAuth";
 
 const Login = () => {

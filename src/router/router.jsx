@@ -7,6 +7,7 @@ import Register from "../components/Auth/Register";
 import Reservation from "../pages/Reservation";
 import AllChefs from "../pages/AllChefs";
 import AboutUs from "../pages/AboutUs";
+import Gallery from "../pages/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "chefs",
         element: <AllChefs />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
       },
       {
         path: "about",

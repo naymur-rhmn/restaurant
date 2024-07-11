@@ -1,0 +1,17 @@
+div#reviewCarousel {
+  height: 100% !important;
+  width: 100%;
+}
+div#reviewCarousel .carousel-root .carousel.carousel-slider,
+div#reviewCarousel .carousel-root .carousel {
+  height: 90% !important;
+}
+div#reviewCarousel .slider-wrapper {
+  height: 100% !important;
+}
+div#reviewCarousel .slider {
+  height: 100% !important;
+}
+div#reviewCarousel .carousel .slider-wrapper.axis-horizontal .slider {
+  height: 100% !important;
+}

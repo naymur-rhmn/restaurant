@@ -7,7 +7,7 @@ const XShapeMask = ({ children, bg }) => {
       >
         <div className="angle-down"></div>
         <div className="angle-up"></div>
-        <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex flex-col justify-between h-full items-center">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-12 flex flex-col justify-between h-full items-center w-full">
           {children}
         </div>
       </div>

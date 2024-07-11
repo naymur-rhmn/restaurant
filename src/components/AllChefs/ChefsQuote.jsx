@@ -5,7 +5,7 @@ import cover from "../../assets/res-bg/kitchen.jpg";
 
 const ChefsQuote = () => {
   return (
-    <div className="mt-8 sm:mt-12 md:mt-16">
+    <div className="mt-8 sm:mt-12 md:mt-16 mb-8 sm:mb-auto">
       <XShapeMask bg={cover}>
         {/* first child */}
         <h3 className="heading-4 sm:heading-3 md:heading-3 lg:heading-2 text-center">

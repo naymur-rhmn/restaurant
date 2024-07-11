@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Shared/Button";
 import FoodMenu from "./FoodMenu";
 
@@ -11,7 +12,9 @@ const FavMenu = () => {
             Favourite menu
           </h2>
           <div>
-            <Button text="See all" px="px-6" />
+            <Link to={"/menu"}>
+              <Button text="See all" px="px-6" />
+            </Link>
           </div>
         </div>
         {/* menu */}

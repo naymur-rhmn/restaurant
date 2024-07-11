@@ -7,6 +7,7 @@ import LongevityComponent from "../components/Home/LongevityComponent";
 import ReservationCard from "../components/Home/ReservationCard";
 import cover1 from "../assets/res-bg/res-bg-1.jpg";
 import cover2 from "../assets/res-bg/res-bg-5.jpg";
+import Review from "../components/AboutUs/Review/Review";
 
 const Home = () => {
   return (
@@ -16,8 +17,14 @@ const Home = () => {
       <CoveredImage bgImg={cover1} />
       <FavMenu />
       <CoveredImage bgImg={cover2} />
+      <div className="sm:pt-6 md:pt-10 lg:pt-14">
+        <Review />
+      </div>
       <Chefs />
-      <About />
+      <div className="pt-0">
+        <About />
+      </div>
+
       <ReservationCard />
     </>
   );

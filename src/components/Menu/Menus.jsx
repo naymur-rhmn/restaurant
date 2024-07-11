@@ -17,8 +17,8 @@ const Menus = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("./items.json");
-        setFoodMenu(res.data.items);
+        const data = await axios.get("http://localhost:3000/foods");
+        setFoodMenu(data.data);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -86,7 +86,7 @@ const Menus = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {categorigedMenu?.map((item) => (
-              <SingleFoodMenu key={item.id} menu={item} />
+              <SingleFoodMenu key={item._id} menu={item} />
             ))}
           </div>
         )}

@@ -19,10 +19,10 @@ const About = () => {
       {/* content */}
       <TwoColumnTxtContent
         para1={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "Immerse yourself in the genuine taste of Japan with our original cuisine, prepared with the finest ingredients. Each dish embodies the artistry and tradition of Japanese cooking, delivering an unforgettable dining experience."
         }
         para2={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "Delight in the authentic flavors of Japan with our original cuisine, crafted from time-honored recipes. Our menu showcases the rich diversity of Japanese culinary traditions, ensuring an exceptional dining experience with every visit."
         }
       />
     </section>

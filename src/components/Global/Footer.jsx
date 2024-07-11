@@ -1,7 +1,29 @@
-import logo from "../../assets/izakaya-logo.png";
-import Button from "../Shared/Button";
+import toast from "react-hot-toast";
+import logo from "../../assets/logo/izakaya-logo.png";
 
 const Footer = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const data = { email: email };
+    try {
+      const response = await fetch("http://localhost:3000/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const res = await response.json();
+      form.reset();
+      console.log(res);
+      toast.success("Success!");
+    } catch (err) {
+      console.error(err);
+    }
+  };
   return (
     <footer className="bg-black pb-5 md:pb-10">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
@@ -11,12 +33,12 @@ const Footer = () => {
               <img className="max-w-[180px] h-full" src={logo} alt="logo" />
             </div>
             <ul className="flex flex-col gap-1  para-lead text-disable">
-              <li>8819 Ohio St. South Gate, CA 90280</li>
+              <li>123 Sushi St, Tokyo</li>
               <li>
-                <a href="">Ourstudio@hello.com</a>
+                <a href="mailto:info@japanesecuisine.com">info@jpcuisine.com</a>
               </li>
               <li>
-                <a href="">+1 386-688-3295</a>
+                <a href="tel:+81312345678">+81 3-1234-5678</a>
               </li>
             </ul>
           </div>
@@ -41,14 +63,19 @@ const Footer = () => {
               Join a Newsletter
             </h4>
             <p className="para-sm">Your Email</p>
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 className="w-full rounded-lg text-black mb-3 p-2 focus:outline-none"
                 type="email"
                 name="email"
                 id="email"
               />
-              <Button text="Subscribe" wFull={true} />
+              <button
+                className={`capitalize para-sm cursor-pointer bg-green text-black text-base md:text-lg rounded-full shadow-md  py-2  px-4 w-full block hover:bg-opacity-90 transition`}
+              >
+                Subscribe
+              </button>
+              {/* <Button text="Subscribe" wFull={true} /> */}
             </form>
           </div>
         </div>
