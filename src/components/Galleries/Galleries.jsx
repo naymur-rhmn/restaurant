@@ -13,7 +13,7 @@ const Galleries = () => {
   const dessert = menu.filter((item) => item.type == "dessert");
 
   useEffect(() => {
-    fetch("http://localhost:3000/foods")
+    fetch("https://izakaya-restaurant.vercel.app/foods")
       .then((res) => res.json())
       .then((data) => {
         setMenu(data);

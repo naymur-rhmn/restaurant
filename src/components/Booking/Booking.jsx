@@ -18,13 +18,16 @@ const Booking = () => {
     const bookingData = { name, email, phone, date, time, seat, message };
 
     try {
-      const response = await fetch("http://localhost:3000/booking", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(bookingData),
-      });
+      const response = await fetch(
+        "https://izakaya-restaurant.vercel.app/booking",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");

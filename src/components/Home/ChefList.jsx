@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const ChefList = ({ sliced }) => {
   const [chefs, setChefs] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/chefs")
+    fetch("https://izakaya-restaurant.vercel.app/chefs")
       .then((res) => res.json())
       .then((data) => (sliced ? setChefs(data.slice(0, 4)) : setChefs(data)));
   }, [sliced]);

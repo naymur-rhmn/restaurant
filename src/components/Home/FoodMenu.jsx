@@ -5,7 +5,7 @@ const FoodMenu = ({ sliced }) => {
   const [foodItems, setFoodItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/foods")
+    fetch("https://izakaya-restaurant.vercel.app/foods")
       .then((res) => res.json())
       .then((data) =>
         sliced ? setFoodItems(data.slice(0, 6)) : setFoodItems(data)

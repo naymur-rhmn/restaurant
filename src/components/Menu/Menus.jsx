@@ -17,7 +17,9 @@ const Menus = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await axios.get("http://localhost:3000/foods");
+        const data = await axios.get(
+          "https://izakaya-restaurant.vercel.app/foods"
+        );
         setFoodMenu(data.data);
       } catch (err) {
         setError(err.message);
