@@ -4,10 +4,10 @@ A modern and visually appealing restaurant website built with **React**, **Vite*
 
 ## 🌐 Live Demo
 
-> Add your deployed link here
+> [https://your-live-demo-link.com](https://restaurant-38c89.web.app/)
 
 ```
-[https://your-live-demo-link.com](https://restaurant-38c89.web.app/)
+
 ```
 
 ## 📸 Preview
