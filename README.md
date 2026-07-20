@@ -6,9 +6,6 @@ A modern and visually appealing restaurant website built with **React**, **Vite*
 
 > [https://your-live-demo-link.com](https://restaurant-38c89.web.app/)
 
-```
-
-```
 
 ## 📸 Preview
 
